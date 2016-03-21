@@ -6,14 +6,17 @@ body {
 .container {
     background-color: #eee;
     border: 1px solid #999;
-    overflow: auto;
     padding: 20px;
     min-width: 600px;
+    position: relative;
+    overflow: auto;
+    height: 500px;
 }
 
 .left {
-    display: inline-block;
-    float: left;
+    position: absolute;
+    left:20px;
+    top: 20px;
     padding: 20px;
     width: 200px;
     border: 1px solid #999;
@@ -31,7 +34,9 @@ body {
 }
 
 .right {
-    float: right;
+    position: absolute;
+    right:20px;
+    top: 20px;
     padding: 20px;
     width: 120px;
     border: 1px solid #999;
